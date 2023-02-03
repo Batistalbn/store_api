@@ -59,6 +59,7 @@ class UserService {
         await serializedUserSchema.validate(userList[i], { stripUnknown: true })
       );
     }
+
     return {
       status: 200,
       message: serializedUser,

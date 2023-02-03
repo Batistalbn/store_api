@@ -8,3 +8,8 @@ export interface ICategoryRepo {
   update: (id: string, payload: object) => Promise<UpdateResult>;
   delete: (id: string) => Promise<DeleteResult>;
 }
+
+export interface IReturnCategory {
+  status: number;
+  message: object;
+}
